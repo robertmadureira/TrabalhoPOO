@@ -1,18 +1,21 @@
 package entities;
 
-public class Departamento extends Funcionario {
-    private String depa_nome;
+public class Departamento {
+    //atributos
+    private String cargo;
 
-    public Departamento(int func_matricula, String func_nome, String func_email, double func_salario, String depa_nome) {
-        super(func_matricula, func_nome, func_email, func_salario);
-        this.depa_nome = depa_nome;
+    //metodos de acesso
+    public String getCargo() {
+        return cargo;
     }
 
-    public String getDepa_nome() {
-        return depa_nome;
+    public void setCargo(String cargo) {
+        this.cargo = cargo;
     }
 
-    public void setDepa_nome(String depa_nome) {
-        this.depa_nome = depa_nome;
+    //metodo de impressao
+    public String imprimir(){
+        return "Departamento: " + cargo;
     }
+
 }

@@ -62,6 +62,7 @@ public class Funcionario {
         System.out.println("Menu: ");
         System.out.println("1 - Adicionar funcionario");
         System.out.println("2 - Imprimir funcionario");
+        System.out.println("3 - Remover funcionario");
         System.out.print("Opção: ");
         int aux = sc.nextInt();
         return aux;

@@ -1,7 +1,6 @@
 package application;
 
 import entities.Funcionario;
-
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -29,9 +28,20 @@ public class Program {
                     Funcionario lf = listafuncionario.get(i); // sem casting!
                     System.out.println(lf.imprimir());
                 }
+            } else if (op == 3){
+                System.out.print("Digite o numero da matricula do funcionario que deseja excluir: ");
+                int temp = sc.nextInt();
+                for (int i = 0; i < listafuncionario.size(); i++) {
+                    Funcionario lf = listafuncionario.get(i); // sem casting!
+                    if(temp == lf.getMatricula())
+                        listafuncionario.remove(i);
+                    else
+                        System.out.println("Funcionario não encontrado");
+                }
+            } else {
+                System.out.println("Opção invalida");
             }
         }
-
         //fim
     }
 }

@@ -8,7 +8,6 @@ public class Departamento {
     public String getCargo() {
         return cargo;
     }
-
     public void setCargo(String cargo) {
         this.cargo = cargo;
     }
